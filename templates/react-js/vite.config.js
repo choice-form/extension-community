@@ -8,6 +8,6 @@ export default defineConfig(({ command }) => {
     base: "/",
     build: { manifest: true },
     plugins: [mkcert(), react()],
-    server: { https: true },
+    server: { https: true, port: 1337 },
   };
 });
