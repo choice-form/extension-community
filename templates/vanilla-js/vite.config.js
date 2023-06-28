@@ -7,6 +7,6 @@ export default defineConfig(({ command }) => {
     base: "/",
     build: { manifest: true },
     plugins: [mkcert()],
-    server: { https: true, port: 1337 },
+    server: { https: true, port: 1337, host: '0.0.0.0' },
   };
 });
